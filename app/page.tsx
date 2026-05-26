@@ -102,11 +102,13 @@ export default function Home() {
 
             {/* After */}
             <div className="relative group">
-              <div className="overflow-hidden rounded-2xl border border-gold/20">
-                <img
+              <div className="relative h-[400px] overflow-hidden rounded-2xl border border-gold/20">
+                <Image
                   src={`${BASE_PATH}/images/after.jpg`}
                   alt="Room after AI redesign"
-                  className="w-full h-[400px] object-cover group-hover:scale-105 transition-transform duration-700"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover group-hover:scale-105 transition-transform duration-700"
                 />
               </div>
               <div className="absolute top-4 left-4 px-4 py-1.5 rounded-full bg-gold/90 text-dark text-xs font-semibold">
@@ -151,21 +153,21 @@ export default function Home() {
             {/* Left phone — tilted */}
             <div className="hidden sm:block w-[240px] flex-shrink-0 opacity-60" style={{ transform: "perspective(1000px) rotateY(8deg) rotateZ(2deg)" }}>
               <div className="rounded-[28px] overflow-hidden border-2 border-dark-border shadow-2xl">
-                <img src={`${BASE_PATH}/images/screen-styles.jpg`} alt="Style selection" className="w-full" />
+                <Image src={`${BASE_PATH}/images/screen-styles.jpg`} alt="SpaceFlip design style selection screen" width={553} height={1200} sizes="240px" className="w-full h-auto" />
               </div>
             </div>
 
             {/* Center phone — hero */}
             <div className="w-[280px] sm:w-[300px] flex-shrink-0 relative z-10">
               <div className="rounded-[32px] overflow-hidden border-2 border-gold/30 shadow-[0_20px_80px_rgba(232,185,49,0.15)]">
-                <img src={`${BASE_PATH}/images/screen-result.jpg`} alt="AI design result" className="w-full" />
+                <Image src={`${BASE_PATH}/images/screen-result.jpg`} alt="SpaceFlip AI room redesign result screen" width={553} height={1200} sizes="300px" className="w-full h-auto" />
               </div>
             </div>
 
             {/* Right phone — tilted */}
             <div className="hidden sm:block w-[240px] flex-shrink-0 opacity-60" style={{ transform: "perspective(1000px) rotateY(-8deg) rotateZ(-2deg)" }}>
               <div className="rounded-[28px] overflow-hidden border-2 border-dark-border shadow-2xl">
-                <img src={`${BASE_PATH}/images/screen-home.jpg`} alt="Home screen" className="w-full" />
+                <Image src={`${BASE_PATH}/images/screen-home.jpg`} alt="SpaceFlip app home screen" width={553} height={1200} sizes="240px" className="w-full h-auto" />
               </div>
             </div>
           </div>
@@ -265,9 +267,12 @@ export default function Home() {
           ═══════════════════════════════════════ */}
       <section className="relative overflow-hidden">
         <div className="gold-line" />
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url('${BASE_PATH}/images/example-after.jpg')` }}
+        <Image
+          src={`${BASE_PATH}/images/example-after.jpg`}
+          alt=""
+          fill
+          sizes="100vw"
+          className="object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-dark via-dark/85 to-dark/70" />
 

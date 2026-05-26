@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useCallback, useRef, useState } from "react";
 
 const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
@@ -71,16 +72,20 @@ export default function BeforeAfterSlider() {
           onTouchEnd={onTouchEnd}
           className="relative aspect-[16/10] rounded-2xl overflow-hidden border border-gold/20 select-none cursor-ew-resize max-w-5xl mx-auto"
         >
-          <img
+          <Image
             src={`${BASE_PATH}/images/example-before.jpg`}
             alt="Room before AI redesign"
-            className="absolute inset-0 w-full h-full object-cover pointer-events-none"
+            fill
+            sizes="(max-width: 1024px) 100vw, 1024px"
+            className="object-cover pointer-events-none"
             draggable={false}
           />
-          <img
+          <Image
             src={`${BASE_PATH}/images/example-after.jpg`}
             alt="Room after AI redesign"
-            className="absolute inset-0 w-full h-full object-cover pointer-events-none"
+            fill
+            sizes="(max-width: 1024px) 100vw, 1024px"
+            className="object-cover pointer-events-none"
             draggable={false}
             style={{ clipPath: `inset(0 ${100 - position}% 0 0)` }}
           />
