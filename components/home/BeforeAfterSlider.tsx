@@ -2,6 +2,8 @@
 
 import { useCallback, useRef, useState } from "react";
 
+const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 export default function BeforeAfterSlider() {
   const [position, setPosition] = useState(50);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -70,13 +72,13 @@ export default function BeforeAfterSlider() {
           className="relative aspect-[16/10] rounded-2xl overflow-hidden border border-gold/20 select-none cursor-ew-resize max-w-5xl mx-auto"
         >
           <img
-            src="/spaceai-site/images/example-before.jpg"
+            src={`${BASE_PATH}/images/example-before.jpg`}
             alt="Room before AI redesign"
             className="absolute inset-0 w-full h-full object-cover pointer-events-none"
             draggable={false}
           />
           <img
-            src="/spaceai-site/images/example-after.jpg"
+            src={`${BASE_PATH}/images/example-after.jpg`}
             alt="Room after AI redesign"
             className="absolute inset-0 w-full h-full object-cover pointer-events-none"
             draggable={false}

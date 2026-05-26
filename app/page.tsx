@@ -6,6 +6,8 @@ import StyleShowcase from "@/components/home/StyleShowcase";
 import FAQ from "@/components/home/FAQ";
 import EmailCapture from "@/components/home/EmailCapture";
 
+const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 export default function Home() {
   return (
     <>
@@ -16,7 +18,7 @@ export default function Home() {
         {/* Background image */}
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/spaceai-site/images/after.jpg')" }}
+          style={{ backgroundImage: `url('${BASE_PATH}/images/after.jpg')` }}
         />
         {/* Dark overlay gradient */}
         <div className="absolute inset-0 bg-gradient-to-b from-dark/80 via-dark/60 to-dark" />
@@ -81,7 +83,7 @@ export default function Home() {
             <div className="relative group">
               <div className="overflow-hidden rounded-2xl border border-dark-border">
                 <img
-                  src="/spaceai-site/images/before.jpg"
+                  src={`${BASE_PATH}/images/before.jpg`}
                   alt="Room before redesign"
                   className="w-full h-[400px] object-cover group-hover:scale-105 transition-transform duration-700"
                 />
@@ -95,7 +97,7 @@ export default function Home() {
             <div className="relative group">
               <div className="overflow-hidden rounded-2xl border border-gold/20">
                 <img
-                  src="/spaceai-site/images/after.jpg"
+                  src={`${BASE_PATH}/images/after.jpg`}
                   alt="Room after AI redesign"
                   className="w-full h-[400px] object-cover group-hover:scale-105 transition-transform duration-700"
                 />
@@ -142,21 +144,21 @@ export default function Home() {
             {/* Left phone — tilted */}
             <div className="hidden sm:block w-[240px] flex-shrink-0 opacity-60" style={{ transform: "perspective(1000px) rotateY(8deg) rotateZ(2deg)" }}>
               <div className="rounded-[28px] overflow-hidden border-2 border-dark-border shadow-2xl">
-                <img src="/spaceai-site/images/screen-styles.jpg" alt="Style selection" className="w-full" />
+                <img src={`${BASE_PATH}/images/screen-styles.jpg`} alt="Style selection" className="w-full" />
               </div>
             </div>
 
             {/* Center phone — hero */}
             <div className="w-[280px] sm:w-[300px] flex-shrink-0 relative z-10">
               <div className="rounded-[32px] overflow-hidden border-2 border-gold/30 shadow-[0_20px_80px_rgba(232,185,49,0.15)]">
-                <img src="/spaceai-site/images/screen-result.jpg" alt="AI design result" className="w-full" />
+                <img src={`${BASE_PATH}/images/screen-result.jpg`} alt="AI design result" className="w-full" />
               </div>
             </div>
 
             {/* Right phone — tilted */}
             <div className="hidden sm:block w-[240px] flex-shrink-0 opacity-60" style={{ transform: "perspective(1000px) rotateY(-8deg) rotateZ(-2deg)" }}>
               <div className="rounded-[28px] overflow-hidden border-2 border-dark-border shadow-2xl">
-                <img src="/spaceai-site/images/screen-home.jpg" alt="Home screen" className="w-full" />
+                <img src={`${BASE_PATH}/images/screen-home.jpg`} alt="Home screen" className="w-full" />
               </div>
             </div>
           </div>
@@ -178,7 +180,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-6 py-28">
           <div className="text-center mb-16">
             <span className="text-xs font-medium uppercase tracking-[0.3em] text-text-muted">
-              What SpaceAI Does
+              What SpaceFlip Does
             </span>
             <h2 className="mt-4 text-3xl sm:text-4xl font-bold">
               Everything you need to <span className="text-gold italic">redesign</span>
@@ -258,7 +260,7 @@ export default function Home() {
         <div className="gold-line" />
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/spaceai-site/images/example-after.jpg')" }}
+          style={{ backgroundImage: `url('${BASE_PATH}/images/example-after.jpg')` }}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-dark via-dark/85 to-dark/70" />
 
