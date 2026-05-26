@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Delete Account — SpaceAI",
+  title: "Delete Account — SpaceFlip",
 };
 
 const deletedData = [
@@ -16,7 +16,7 @@ const deletedData = [
 ];
 
 const steps = [
-  "Open SpaceAI and go to your Profile",
+  "Open SpaceFlip and go to your Profile",
   "Tap Settings (gear icon)",
   "Scroll down and tap \"Delete Account\"",
   "Confirm your decision",
@@ -130,10 +130,10 @@ export default function DeleteAccount() {
         <p className="text-text-secondary leading-relaxed">
           You can also request account deletion by emailing{" "}
           <a
-            href="mailto:support@spaceai.app"
+            href="mailto:support@spaceflip.co"
             className="text-gold border-b border-gold/30 hover:border-gold transition-colors"
           >
-            support@spaceai.app
+            support@spaceflip.co
           </a>{" "}
           from the email address associated with your account.
         </p>

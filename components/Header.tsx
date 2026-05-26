@@ -33,7 +33,7 @@ export default function Header() {
           className="text-xl font-bold tracking-tight flex-shrink-0"
           style={{ fontFamily: "var(--font-display), serif" }}
         >
-          Space<span className="gold-shimmer">AI</span>
+          Space<span className="gold-shimmer">Flip</span>
         </Link>
 
         <div className="hidden md:flex items-center gap-7 text-sm text-text-secondary">

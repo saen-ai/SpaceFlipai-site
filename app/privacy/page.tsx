@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-export const metadata: Metadata = { title: "Privacy Policy — SpaceAI" };
+export const metadata: Metadata = { title: "Privacy Policy — SpaceFlip" };
 
 export default function PrivacyPolicy() {
   return (
@@ -18,11 +18,11 @@ export default function PrivacyPolicy() {
         {/* 1. Introduction */}
         <h2>1. Introduction</h2>
         <p>
-          SpaceAI (&ldquo;we,&rdquo; &ldquo;our,&rdquo; or &ldquo;us&rdquo;)
-          operates the SpaceAI mobile application (the
+          SpaceFlip (&ldquo;we,&rdquo; &ldquo;our,&rdquo; or &ldquo;us&rdquo;)
+          operates the SpaceFlip mobile application (the
           &ldquo;App&rdquo;). This Privacy Policy explains what personal
           information we collect, how we use and share it, and the choices you
-          have regarding your data. By using SpaceAI you agree to the
+          have regarding your data. By using SpaceFlip you agree to the
           collection and use of information in accordance with this policy. If
           you do not agree with the terms described here, please do not use the
           App.
@@ -42,7 +42,7 @@ export default function PrivacyPolicy() {
 
         <h3>Room Photos</h3>
         <p>
-          SpaceAI allows you to capture new photos with your device camera or
+          SpaceFlip allows you to capture new photos with your device camera or
           select existing images from your photo library. These room photos are
           uploaded to our servers so that our AI models can analyze and
           transform them into new design concepts.
@@ -217,7 +217,7 @@ export default function PrivacyPolicy() {
         {/* 6. Device Permissions */}
         <h2>6. Device Permissions</h2>
         <p>
-          SpaceAI requests the following device permissions. Each permission is
+          SpaceFlip requests the following device permissions. Each permission is
           requested only when needed and you may deny or revoke any permission
           at any time through your device settings:
         </p>
@@ -323,7 +323,7 @@ export default function PrivacyPolicy() {
         </ul>
         <p>
           To exercise any of these rights, please contact us at{" "}
-          <a href="mailto:privacy@spaceai.app">privacy@spaceai.app</a>. We
+          <a href="mailto:privacy@spaceflip.co">privacy@spaceflip.co</a>. We
           will respond to your request within 30 days.
         </p>
 
@@ -351,14 +351,14 @@ export default function PrivacyPolicy() {
         {/* 10. Children's Privacy */}
         <h2>10. Children&rsquo;s Privacy</h2>
         <p>
-          SpaceAI is not intended for use by children under the age of 13 (or
+          SpaceFlip is not intended for use by children under the age of 13 (or
           the applicable minimum age in your jurisdiction). We do not knowingly
           collect personal information from children under 13. If we become
           aware that we have inadvertently collected data from a child under
           13, we will take prompt steps to delete that information from our
           servers. If you are a parent or guardian and believe your child has
           provided us with personal data, please contact us at{" "}
-          <a href="mailto:privacy@spaceai.app">privacy@spaceai.app</a> so we
+          <a href="mailto:privacy@spaceflip.co">privacy@spaceflip.co</a> so we
           can take appropriate action.
         </p>
 
@@ -410,7 +410,7 @@ export default function PrivacyPolicy() {
         </ul>
         <p>
           To exercise your California privacy rights, please contact us at{" "}
-          <a href="mailto:privacy@spaceai.app">privacy@spaceai.app</a>.
+          <a href="mailto:privacy@spaceflip.co">privacy@spaceflip.co</a>.
         </p>
 
         {/* 13. European Privacy Rights (GDPR) */}
@@ -455,7 +455,7 @@ export default function PrivacyPolicy() {
         <p>
           To exercise your GDPR rights or to contact our data protection
           representative, please email{" "}
-          <a href="mailto:privacy@spaceai.app">privacy@spaceai.app</a>.
+          <a href="mailto:privacy@spaceflip.co">privacy@spaceflip.co</a>.
         </p>
 
         {/* 14. Changes to This Policy */}
@@ -468,7 +468,7 @@ export default function PrivacyPolicy() {
           or displaying a prominent in-app notice. The &ldquo;Last
           updated&rdquo; date at the top of this page indicates when the policy
           was most recently revised. We encourage you to review this policy
-          periodically. Your continued use of SpaceAI after any changes
+          periodically. Your continued use of SpaceFlip after any changes
           constitutes your acceptance of the updated policy.
         </p>
 
@@ -481,7 +481,7 @@ export default function PrivacyPolicy() {
         <ul>
           <li>
             <strong>Email:</strong>{" "}
-            <a href="mailto:privacy@spaceai.app">privacy@spaceai.app</a>
+            <a href="mailto:privacy@spaceflip.co">privacy@spaceflip.co</a>
           </li>
         </ul>
         <p>

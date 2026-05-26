@@ -17,7 +17,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "SpaceAI — AI-Powered Room Redesign",
+  title: "SpaceFlip — AI-Powered Room Redesign",
   description:
     "Transform any room with AI. Snap a photo, choose a style, and see your space reimagined in seconds.",
 };

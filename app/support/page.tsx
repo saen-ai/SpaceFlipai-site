@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Support — SpaceAI",
+  title: "Support — SpaceFlip",
 };
 
 const faqs = [
@@ -79,10 +79,10 @@ export default function Support() {
           <p className="text-text-secondary">
             Have a question or need help? Reach out to us at{" "}
             <a
-              href="mailto:support@spaceai.app"
+              href="mailto:support@spaceflip.co"
               className="text-gold border-b border-gold/30 hover:border-gold transition-colors"
             >
-              support@spaceai.app
+              support@spaceflip.co
             </a>
           </p>
         </div>
@@ -138,7 +138,7 @@ export default function Support() {
       {/* App Info */}
       <section className="border-t border-dark-border pt-8">
         <p className="text-sm text-text-muted">
-          SpaceAI &middot; Version 1.0.9 &middot; Platform: iOS &amp; Android
+          SpaceFlip &middot; Version 1.0.9 &middot; Platform: iOS &amp; Android
         </p>
       </section>
     </div>

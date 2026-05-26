@@ -15,7 +15,7 @@ export default function Footer() {
               className="text-2xl font-bold tracking-tight"
               style={{ fontFamily: "var(--font-display), serif" }}
             >
-              Space<span className="gold-shimmer">AI</span>
+              Space<span className="gold-shimmer">Flip</span>
             </Link>
             <p className="mt-3 text-sm text-text-muted leading-relaxed">
               AI-powered interior design.
@@ -90,10 +90,10 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="mailto:support@spaceai.app"
+                  href="mailto:support@spaceflip.co"
                   className="text-text-secondary hover:text-gold transition-colors duration-200"
                 >
-                  support@spaceai.app
+                  support@spaceflip.co
                 </a>
               </li>
             </ul>
@@ -102,7 +102,7 @@ export default function Footer() {
 
         {/* Bottom bar */}
         <div className="mt-14 pt-6 border-t border-dark-border flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-text-muted">
-          <p>&copy; {new Date().getFullYear()} SpaceAI. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} SpaceFlip. All rights reserved.</p>
           <p>Made with AI for design lovers.</p>
         </div>
       </div>

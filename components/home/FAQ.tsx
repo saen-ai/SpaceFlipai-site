@@ -1,6 +1,6 @@
 const faqs = [
   {
-    q: "How does SpaceAI actually work?",
+    q: "How does SpaceFlip actually work?",
     a: "Snap a photo of any room and our AI analyzes the space — detecting furniture, lighting, layout, and dimensions. Then it generates a fully redesigned version in your chosen style, in under 60 seconds.",
   },
   {

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-export const metadata: Metadata = { title: "Terms of Service — SpaceAI" };
+export const metadata: Metadata = { title: "Terms of Service — SpaceFlip" };
 
 export default function TermsOfService() {
   return (
@@ -18,13 +18,13 @@ export default function TermsOfService() {
         {/* 1. Acceptance of Terms */}
         <h2>1. Acceptance of Terms</h2>
         <p>
-          By accessing, downloading, installing, or using the SpaceAI mobile
+          By accessing, downloading, installing, or using the SpaceFlip mobile
           application or any associated services (collectively, the
           &ldquo;Service&rdquo;), you acknowledge that you have read,
           understood, and agree to be bound by these Terms of Service
           (&ldquo;Terms&rdquo;). These Terms constitute a legally binding
           agreement between you (&ldquo;User,&rdquo; &ldquo;you,&rdquo; or
-          &ldquo;your&rdquo;) and SpaceAI (&ldquo;we,&rdquo; &ldquo;us,&rdquo;
+          &ldquo;your&rdquo;) and SpaceFlip (&ldquo;we,&rdquo; &ldquo;us,&rdquo;
           or &ldquo;our&rdquo;).
         </p>
         <p>
@@ -37,7 +37,7 @@ export default function TermsOfService() {
         {/* 2. Service Description */}
         <h2>2. Service Description</h2>
         <p>
-          SpaceAI is an AI-powered interior design application that enables
+          SpaceFlip is an AI-powered interior design application that enables
           users to transform their living and working spaces through artificial
           intelligence. The Service allows you to:
         </p>
@@ -100,7 +100,7 @@ export default function TermsOfService() {
         {/* 3. Account Registration */}
         <h2>3. Account Registration</h2>
         <p>
-          To access the full functionality of SpaceAI, you must create an
+          To access the full functionality of SpaceFlip, you must create an
           account. You may register using one of the following methods:
         </p>
         <ul>
@@ -128,7 +128,7 @@ export default function TermsOfService() {
           You are solely responsible for maintaining the confidentiality of your
           account credentials and for all activities that occur under your
           account. You agree to notify us immediately at{" "}
-          <a href="mailto:support@spaceai.app">support@spaceai.app</a> if you
+          <a href="mailto:support@spaceflip.co">support@spaceflip.co</a> if you
           become aware of any unauthorized use of your account or any other
           breach of security. We shall not be liable for any loss or damage
           arising from your failure to protect your account credentials.
@@ -137,7 +137,7 @@ export default function TermsOfService() {
         {/* 4. Subscription Plans and Billing */}
         <h2>4. Subscription Plans and Billing</h2>
         <p>
-          SpaceAI offers multiple subscription tiers to accommodate different
+          SpaceFlip offers multiple subscription tiers to accommodate different
           usage needs:
         </p>
 
@@ -193,14 +193,14 @@ export default function TermsOfService() {
         <p>
           All refund requests are handled by the respective app store (Apple App
           Store or Google Play Store) in accordance with their refund policies.
-          SpaceAI does not process refunds directly. Please contact Apple or
+          SpaceFlip does not process refunds directly. Please contact Apple or
           Google support for any billing disputes or refund requests.
         </p>
 
         {/* 5. Credits and Usage */}
         <h2>5. Credits and Usage</h2>
         <p>
-          SpaceAI operates on a credit-based system for AI generations:
+          SpaceFlip operates on a credit-based system for AI generations:
         </p>
         <ul>
           <li>
@@ -220,7 +220,7 @@ export default function TermsOfService() {
           </li>
           <li>
             Free credits may be earned through our referral program by inviting
-            other users to join SpaceAI. Referral credit amounts and terms are
+            other users to join SpaceFlip. Referral credit amounts and terms are
             subject to change at our discretion.
           </li>
           <li>
@@ -236,7 +236,7 @@ export default function TermsOfService() {
         {/* 6. Acceptable Use */}
         <h2>6. Acceptable Use</h2>
         <p>
-          You agree to use SpaceAI only for lawful purposes and in accordance
+          You agree to use SpaceFlip only for lawful purposes and in accordance
           with these Terms. You expressly agree that you will NOT:
         </p>
         <ul>
@@ -292,7 +292,7 @@ export default function TermsOfService() {
         <h3>7.1 Your Content</h3>
         <p>
           You retain full ownership of all photographs and images that you
-          upload to SpaceAI. By uploading content, you grant us a limited,
+          upload to SpaceFlip. By uploading content, you grant us a limited,
           non-exclusive, worldwide license to process, analyze, and transform
           your images solely for the purpose of providing the Service to you.
         </p>
@@ -309,18 +309,18 @@ export default function TermsOfService() {
 
         <h3>7.3 Service Improvement</h3>
         <p>
-          SpaceAI retains the right to use anonymized, aggregated, and
+          SpaceFlip retains the right to use anonymized, aggregated, and
           de-identified data derived from your use of the Service to improve,
           train, and enhance our AI models and overall Service quality. This
           data will not be used in a manner that personally identifies you or
           exposes your original uploaded images to third parties.
         </p>
 
-        <h3>7.4 SpaceAI Intellectual Property</h3>
+        <h3>7.4 SpaceFlip Intellectual Property</h3>
         <p>
-          The SpaceAI name, brand, logo, app design, user interface, underlying
+          The SpaceFlip name, brand, logo, app design, user interface, underlying
           technology, AI models, and all associated intellectual property are
-          and remain the exclusive property of SpaceAI. Nothing in these Terms
+          and remain the exclusive property of SpaceFlip. Nothing in these Terms
           grants you any right, title, or interest in our intellectual property
           beyond the limited license to use the Service as described herein.
         </p>
@@ -420,8 +420,8 @@ export default function TermsOfService() {
         </ul>
         <p>
           You may delete your account at any time through the app settings
-          within SpaceAI, or by contacting our support team at{" "}
-          <a href="mailto:support@spaceai.app">support@spaceai.app</a>. Upon
+          within SpaceFlip, or by contacting our support team at{" "}
+          <a href="mailto:support@spaceflip.co">support@spaceflip.co</a>. Upon
           account deletion, your personal data will be handled in accordance
           with our Privacy Policy. Please note that account deletion does not
           entitle you to a refund of any prepaid subscription fees.
@@ -467,7 +467,7 @@ export default function TermsOfService() {
           You agree that any arbitration shall be conducted on an individual
           basis and not as a class, consolidated, or representative action. You
           waive any right to participate in a class action lawsuit or class-wide
-          arbitration against SpaceAI.
+          arbitration against SpaceFlip.
         </p>
 
         {/* 13. Severability */}
@@ -490,7 +490,7 @@ export default function TermsOfService() {
         </p>
         <p>
           <strong>Email:</strong>{" "}
-          <a href="mailto:support@spaceai.app">support@spaceai.app</a>
+          <a href="mailto:support@spaceflip.co">support@spaceflip.co</a>
         </p>
         <p>
           We will make reasonable efforts to respond to your inquiries in a
