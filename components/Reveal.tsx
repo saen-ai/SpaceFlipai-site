@@ -17,10 +17,6 @@ export default function Reveal({
   useEffect(() => {
     const node = ref.current;
     if (!node) return;
-    if (typeof window === "undefined" || !("IntersectionObserver" in window)) {
-      setVisible(true);
-      return;
-    }
 
     const observer = new IntersectionObserver(
       (entries) => {
