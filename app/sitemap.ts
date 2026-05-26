@@ -3,7 +3,7 @@ import type { MetadataRoute } from "next";
 // Required for `output: export` — emit a static sitemap.xml at build time.
 export const dynamic = "force-static";
 
-const SITE_URL = "https://spaceflip.co";
+const SITE_URL = "https://www.spaceflip.co";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date();

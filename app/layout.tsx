@@ -16,7 +16,7 @@ const inter = Inter({
   display: "swap",
 });
 
-const SITE_URL = "https://spaceflip.co";
+const SITE_URL = "https://www.spaceflip.co";
 const SITE_DESCRIPTION =
   "Transform any room with AI. Snap a photo, choose from 12 interior design styles, and see your space redesigned in seconds. The AI interior design app for homeowners and designers.";
 
