@@ -1,6 +1,11 @@
 import type { Metadata } from "next";
 
-export const metadata: Metadata = { title: "Terms of Service — SpaceFlip" };
+export const metadata: Metadata = {
+  title: "Terms of Service",
+  description:
+    "The terms and conditions for using SpaceFlip, the AI-powered interior design and room redesign app.",
+  alternates: { canonical: "/terms" },
+};
 
 export default function TermsOfService() {
   return (

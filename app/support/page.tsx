@@ -2,7 +2,10 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Support — SpaceFlip",
+  title: "Support",
+  description:
+    "Get help with SpaceFlip — answers to common questions about AI room redesign, accounts, credits, and how to contact our support team.",
+  alternates: { canonical: "/support" },
 };
 
 const faqs = [

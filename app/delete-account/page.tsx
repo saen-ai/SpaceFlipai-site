@@ -2,7 +2,10 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Delete Account — SpaceFlip",
+  title: "Delete Account",
+  description:
+    "How to delete your SpaceFlip account and what data is removed, including room photos, generated designs, and account details.",
+  alternates: { canonical: "/delete-account" },
 };
 
 const deletedData = [

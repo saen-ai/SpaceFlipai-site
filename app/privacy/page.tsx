@@ -1,6 +1,11 @@
 import type { Metadata } from "next";
 
-export const metadata: Metadata = { title: "Privacy Policy — SpaceFlip" };
+export const metadata: Metadata = {
+  title: "Privacy Policy",
+  description:
+    "How SpaceFlip collects, uses, and protects your data and room photos when you use our AI interior design app.",
+  alternates: { canonical: "/privacy" },
+};
 
 export default function PrivacyPolicy() {
   return (
