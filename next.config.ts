@@ -1,17 +1,11 @@
 import type { NextConfig } from "next";
 
-// Served at the root of the custom domain (spaceflip.co), so no basePath.
-// NEXT_PUBLIC_BASE_PATH stays exposed (empty) so asset-path helpers keep
-// working and we can reintroduce a prefix later without touching components.
-const basePath = "";
-
+// Deployed on Vercel — full Next.js runtime with image optimization.
+// Served at the root of spaceflip.co, so there is no basePath; the empty
+// NEXT_PUBLIC_BASE_PATH keeps the asset-path helpers resolving to "/...".
 const nextConfig: NextConfig = {
-  output: "export",
   env: {
-    NEXT_PUBLIC_BASE_PATH: basePath,
-  },
-  images: {
-    unoptimized: true,
+    NEXT_PUBLIC_BASE_PATH: "",
   },
 };
 
