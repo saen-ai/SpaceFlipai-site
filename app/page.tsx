@@ -1,3 +1,4 @@
+import Image from "next/image";
 import AppStoreButton from "@/components/AppStoreButton";
 import Reveal from "@/components/Reveal";
 import BeforeAfterSlider from "@/components/home/BeforeAfterSlider";
@@ -15,10 +16,14 @@ export default function Home() {
           HERO — Full bleed image background
           ═══════════════════════════════════════ */}
       <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
-        {/* Background image */}
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url('${BASE_PATH}/images/after.jpg')` }}
+        {/* Background image (LCP — eager + optimized) */}
+        <Image
+          src={`${BASE_PATH}/images/after.jpg`}
+          alt=""
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover"
         />
         {/* Dark overlay gradient */}
         <div className="absolute inset-0 bg-gradient-to-b from-dark/80 via-dark/60 to-dark" />
@@ -37,9 +42,9 @@ export default function Home() {
 
           {/* Headline */}
           <h1 className="animate-fade-up stagger-2 text-5xl sm:text-7xl lg:text-8xl font-bold tracking-tight leading-[0.95]">
-            Snap. Transform.
+            AI Room Redesign
             <br />
-            <span className="gold-shimmer italic">Love It.</span>
+            <span className="gold-shimmer italic">in seconds.</span>
           </h1>
 
           {/* Subtitle */}
@@ -81,11 +86,13 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
             {/* Before */}
             <div className="relative group">
-              <div className="overflow-hidden rounded-2xl border border-dark-border">
-                <img
+              <div className="relative h-[400px] overflow-hidden rounded-2xl border border-dark-border">
+                <Image
                   src={`${BASE_PATH}/images/before.jpg`}
-                  alt="Room before redesign"
-                  className="w-full h-[400px] object-cover group-hover:scale-105 transition-transform duration-700"
+                  alt="Room before AI redesign"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover group-hover:scale-105 transition-transform duration-700"
                 />
               </div>
               <div className="absolute top-4 left-4 px-4 py-1.5 rounded-full bg-dark/80 backdrop-blur-sm border border-dark-border text-xs font-medium text-text-secondary">
