@@ -29,9 +29,23 @@ function Chevron() {
   );
 }
 
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((faq) => ({
+    "@type": "Question",
+    name: faq.q,
+    acceptedAnswer: { "@type": "Answer", text: faq.a },
+  })),
+};
+
 export default function FAQ() {
   return (
     <section id="faq" className="relative py-28 overflow-hidden">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       <div className="gold-line" />
       <div className="max-w-4xl mx-auto px-6 pt-16">
         <div className="text-center mb-14">

@@ -38,6 +38,22 @@ export default function Footer() {
                   Features
                 </Link>
               </li>
+              <li>
+                <Link
+                  href="/styles"
+                  className="text-text-secondary hover:text-gold transition-colors duration-200"
+                >
+                  Design Styles
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/blog"
+                  className="text-text-secondary hover:text-gold transition-colors duration-200"
+                >
+                  Blog
+                </Link>
+              </li>
             </ul>
           </div>
 

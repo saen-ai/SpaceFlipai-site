@@ -1,27 +1,8 @@
 "use client";
 
 import { useState } from "react";
-
-type Style = {
-  name: string;
-  description: string;
-  palette: [string, string, string];
-};
-
-const styles: Style[] = [
-  { name: "Modern", description: "Clean lines, neutral tones, open spaces.", palette: ["#E8E4DD", "#8B8680", "#2C2A28"] },
-  { name: "Scandinavian", description: "Light woods, soft whites, cozy textiles.", palette: ["#F5F1EA", "#D4C5B0", "#7A6A55"] },
-  { name: "Japandi", description: "Japanese minimalism meets Scandi warmth.", palette: ["#EDE6D8", "#A89B82", "#3D3327"] },
-  { name: "Bohemian", description: "Layered patterns, plants, warm earthy tones.", palette: ["#D4A574", "#A0522D", "#5C3317"] },
-  { name: "Art Deco", description: "Bold geometry, gold accents, rich jewel tones.", palette: ["#1A1A2E", "#C9A86A", "#722F37"] },
-  { name: "Industrial", description: "Exposed brick, raw metal, leather, concrete.", palette: ["#6B5D4F", "#3A3530", "#1F1B17"] },
-  { name: "Coastal", description: "Whites, blues, natural fibers, airy and bright.", palette: ["#F0F4F8", "#A8C5D6", "#3E5C76"] },
-  { name: "Mid-Century", description: "Walnut, mustard, teak, sculpted shapes.", palette: ["#D4A14A", "#8B5A2B", "#3D2817"] },
-  { name: "Minimalist", description: "Less is more. Pure forms, single color story.", palette: ["#FAFAFA", "#C8C8C8", "#1A1A1A"] },
-  { name: "Farmhouse", description: "Reclaimed wood, shiplap, vintage charm.", palette: ["#F2EBDF", "#B89B7A", "#5D4A37"] },
-  { name: "Luxury", description: "Velvet, marble, brass, deep moody hues.", palette: ["#2C1F2D", "#7B5E3C", "#D4AF37"] },
-  { name: "Eclectic", description: "Mix eras and styles with confident curation.", palette: ["#8B4789", "#D4A574", "#2E5266"] },
-];
+import Link from "next/link";
+import { styles } from "@/lib/styles";
 
 export default function StyleShowcase() {
   const [active, setActive] = useState(0);
@@ -59,6 +40,13 @@ export default function StyleShowcase() {
               <p className="mt-3 text-sm text-text-secondary leading-relaxed">
                 {current.description}
               </p>
+              <Link
+                href={`/styles/${current.slug}`}
+                className="mt-5 inline-flex items-center gap-1 text-sm font-medium text-gold hover:gap-2 transition-all"
+              >
+                Explore {current.name} designs
+                <span aria-hidden>→</span>
+              </Link>
             </div>
             <div className="md:col-span-2 flex flex-col">
               <div className="flex flex-1 min-h-[160px]">
