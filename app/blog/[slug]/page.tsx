@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { posts, getPost } from "@/lib/blog";
+import { getStyle } from "@/lib/styles";
 import AppStoreButton from "@/components/AppStoreButton";
 
 const SITE_URL = "https://www.spaceflip.co";
@@ -119,6 +120,29 @@ export default async function BlogPostPage({
           <AppStoreButton className="px-7 py-3.5 text-base shadow-[0_10px_40px_rgba(232,185,49,0.25)]" />
         </div>
       </div>
+
+      {post.relatedStyles && post.relatedStyles.length > 0 && (
+        <div className="mt-12">
+          <h2 className="text-sm uppercase tracking-[0.25em] text-text-muted mb-4">
+            Related styles
+          </h2>
+          <div className="flex flex-wrap gap-2">
+            {post.relatedStyles.map((slug) => {
+              const style = getStyle(slug);
+              if (!style) return null;
+              return (
+                <Link
+                  key={slug}
+                  href={`/styles/${slug}`}
+                  className="px-4 py-2 rounded-full border border-dark-border text-sm text-text-secondary hover:border-gold/40 hover:text-text-primary transition-colors"
+                >
+                  {style.name}
+                </Link>
+              );
+            })}
+          </div>
+        </div>
+      )}
 
       <div className="mt-10">
         <Link
